@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Borna bold';
+  src: url('Borna-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Borna Regular';
+  src: url('Borna-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Kelsi';
+  src: url('Kelsi-Regular.otf') format('opentype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Borna;
+  
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+
+#saveInstructions {
+  position: fixed; 
+  bottom: -20px; 
+  right: 0px; 
+  font-family: 'Borna Regular', sans-serif !important; 
+  font-size: 20px !important;
+  color: black !important; 
+  text-align: right !important; 
+  background-color: transparent !important; 
+}
+
+#container {
+  position: relative;
+}
+
+
+.container {
+  text-align: center;
+  margin-top: 50vh;
+  height: calc(50vh + 50px);
+}
+
+
+h1 {
+  font-family: kelsi;
+  font-size: 10rem;
+  text-align: center;
+  margin-top: -300px; 
+}
+
+p {
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%;
+  background-color: #f0f0f0;
+  border-radius: 32px;
+  padding: 20px;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+
+.startDrawing {
+  font-family: Borna;
+  background-color: #f0f0f0;
+  border: 4px solid black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 10px;
+  cursor: pointer;
+  border-radius: 32px;
+  font-size: 2rem;
+}
+
+.filterButton {
+  font-family: Borna;
+  background-color: #f0f0f0;
+  border: 2px solid black;
+  color: black;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 4px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+
+
+.mySliders:focus {
+  
+  outline: black;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire background */
+  z-index: -1; /* Place it behind other content */
+}
+
+.hidden {
+  display: none;
+}
+/* filepath: style.css */
+#sketchCanvas {
+  display: none;
+}

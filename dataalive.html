@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixIt</title>
+
+    <link rel="stylesheet"  href="style.css">
+  </head>
+    <body>
+      <video autoplay muted loop>
+        <source src="Data Alive video.mp4" type="video/mp4">
+      </video>
+      
+      <div id="homepage" class="container">
+
+        <h1>PixIt</h1>
+        <p>PixItis a dynamic editing tool focused on self-expression, allowing you to edit and customize your own image in real-time. Experiment with a variety of filters, blend modes and a slider to control the brush size, explore different ways to see and present yourself creatively. 
+          Don't forget to save the image if you like the outcome!</p>
+        <button id="startButton" class="startDrawing">Start Drawing!</button>
+
+      </div>
+      <div id="filterButtons" style="display:none; position:fixed; bottom:20px; left:50%; transform:translateX(-50%); z-index:10; display:none; flex-wrap:wrap; justify-content:center; gap:8px;"></div>
+    <div>
+      <p id="saveInstructions">Press 's' to save</p>
+    </div>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+
+
+
+      </body>
+</html>
